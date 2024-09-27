@@ -8,6 +8,7 @@ def sumElements(nums):
     if len(nums) == 0:
         return -1
     currSum = 0
+    
     for i in range(len(nums)):
         currSum += nums[i]
     print('Sum:', currSum)

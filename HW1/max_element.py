@@ -9,7 +9,7 @@ def maxNums(nums):
         if n > current_max:
             current_max = n
 
-    print('current_max:', current_max)  # Make sure this prints before the return
+    print('current_max:', current_max)  
 
     return current_max
 
