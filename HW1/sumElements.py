@@ -20,3 +20,7 @@ def sumElements(nums):
 
 result = sumElements([10,20,30,40,50])
 assert result == 150, f'excpected 150 but got {result}'
+
+
+result = sumElements([0,1,2,3,4])
+assert result == 10, f'excpected 10 but got {result}'
