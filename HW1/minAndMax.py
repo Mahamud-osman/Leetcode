@@ -13,7 +13,7 @@ def minAndMax(nums):
     current_max_index = 0
     current_min_index = 0
     
-    #Calculate max
+    #Index Comparison
     for i in range(len(nums)):
         if nums[i] > nums[current_max_index]:
             current_max_index = i
