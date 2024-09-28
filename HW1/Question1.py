@@ -1,4 +1,9 @@
 
+"""
+1. Find the Maximum Element
+Write a function that iterates over an array and returns the maximum element. Use simple array indexing to access each element.
+
+"""
 def maxNums(nums):
     if len(nums) == 0:
         return -1
