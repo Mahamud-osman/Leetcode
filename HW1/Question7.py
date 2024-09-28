@@ -35,3 +35,6 @@ This one was a little tricky but realized I could traverse once, find the larges
 #Manual Testing
 result = findSecondLargest( [1,5,3,9,4,8] )
 assert result == 8, f'Expcted 8, but got {result}'
+
+result = findSecondLargest( [10,11,12,16,22,100] )
+assert result == 22, f'Expcted 22, but got {result}'
