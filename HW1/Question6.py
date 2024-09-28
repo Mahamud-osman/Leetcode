@@ -16,8 +16,17 @@ output = [5,1,2,3,4]
         
 #     print('nums', nums)
     
-    
+ # Search online on how to handle out of range error and saw this    
+ # https://stackoverflow.com/questions/73505064/right-rotate-the-array-by-one-index
+ # Start from the end of the array, have last element = nums[0]
+ # start iterating from end of the array, shift index one position 
 def rotateArray(nums):
+    
+    last_index = len(nums) - 1
+    last_index = nums[0]    
+    
+    # for i in range(len(nums) - 1)
+    
     pass
 
 #Manual testcases
