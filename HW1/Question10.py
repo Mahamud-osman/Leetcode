@@ -13,13 +13,13 @@ def peakElement(nums):
     if len(nums) < 2:
         return - 1
     
-    peak_index = 1
+    peak_index = 1 # since we want to subtract number before
     
     for i in range(len(nums)):
         if nums[peak_index] - nums[i] == 1:
             print('Peak Index',nums[peak_index] )
             return nums[peak_index]
-        peak_index += 1
+        peak_index += 1     #Increment the peak index after for loop
  
 
 """"

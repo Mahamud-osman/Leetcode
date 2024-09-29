@@ -22,14 +22,19 @@ output = [5,1,2,3,4]
  # start iterating from end of the array, shift index one position 
 def rotateArray(nums):
     
-    last_index = len(nums) - 1
-    last_index = nums[0]    
+    # last_index = len(nums) - 1
+    # last_index = nums[0]    
+    # This how I solve it, shift the index by one but not sure how to solve for out of bound error
     
-    # for i in range(len(nums) - 1)
-    
-    pass
+    for i in range(len(nums)- 1, -1, -1):   #Traverese an array backwards
+        # while i < len(nums):        #Trying to handle out of bound error
+            nums[i] = nums[i + 1]
+        
+    print('nums', nums)
+
+    # pass
 
 #Manual testcases
 
-result = rotateArray([[1,2]])
-assert result == [2,1], f'Expected [5,1,2,3,4] but got {result}'
+result = rotateArray([1,2,3,4,5])
+assert result == [5,1,2,3,4], f'Expected [5,1,2,3,4] but got {result}'

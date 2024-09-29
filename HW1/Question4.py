@@ -10,6 +10,10 @@ def countNegatives(nums):
     #Increment and have a check to if number is less than zero
     # if number is less than zero increment negative counter
     # return counter
+    #Handle edge case
+    if len(nums) == 0:
+        return - 1
+
     negative_counter = 0
     
     for i in range(len(nums)):
