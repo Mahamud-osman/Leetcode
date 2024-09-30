@@ -4,8 +4,7 @@ Write a function that inserts a new element at a specific index in the array, sh
 """
 
 def specificIndex(nums, k, val): 
-    pass
-
+        pass
 
 
 
