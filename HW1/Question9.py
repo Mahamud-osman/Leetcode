@@ -4,7 +4,17 @@ Write a function that inserts a new element at a specific index in the array, sh
 """
 
 def specificIndex(nums, k, val): 
-        pass
+        for _ in range(k, len(nums)):
+            nums[k] = val
+        last_value = nums[-1]
+    
+        for i in range(len(nums)):
+            current = nums[i]       #Stash our current value
+            nums[i] = last_value    #Make our last value = current val 
+            last_value = current
+        
+        print(nums)
+        return nums
 
 
 

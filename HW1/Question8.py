@@ -6,6 +6,8 @@ output = [5,7,11,1,3]
 """
 def rotatebyK(nums, k): 
     #Keep track of current value:
+    
+        #Use modular arithmetic to handle the array indexing not sure what modular indexing is
         
         last_value = nums[-1 - k]       #Not sure how to handle for this
     
