@@ -41,5 +41,5 @@ assert result == 8, f'Expcted 8, but got {result}'
 result = findSecondLargest( [10,11,12,16,22,100] )
 assert result == 22, f'Expcted 22, but got {result}'
 
-result = findSecondLargest( [15,30,75,22,76,12] )
+result = findSecondLargest( [75,15,30,75,22,76,12] )
 assert result == 75, f'Expcted 75, but got {result}'
