@@ -5,19 +5,39 @@ nums = [1,3,5,7,11]
 output = [5,7,11,1,3]
 """
 def rotatebyK(nums, k): 
-    #Keep track of current value:
-    
-        #Use modular arithmetic to handle the array indexing not sure what modular indexing is
-        
-        last_value = nums[-1 - k]       #Not sure how to handle for this
-    
-        for i in range(len(nums)):
-            current_index = nums[i]       #Stash our current value
-            nums[i] = last_value    #Make our last value = current val 
-            last_value = current_index
-        
-        print(nums)
+    res = []
 
+    for i in range(len(nums)):
+        res.append(nums[(i + k)%len(nums)])
+    
+    print(res)
+    return res
+
+    
 #Manual testing:
 result = rotatebyK([1,3,5,7,11], 2)
 assert result ==[5,7,11,1,3], f'Expected [5, 7, 11, 1, 3]. but got {result}'
+
+"""
+og_nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+k = 4
+nums[0]
+cp_nums = [1, 2, 3, 4, 1, 2, 3, 4, 5, 6] 
+
+cp_nums[(i+k)%len(nums)] = og_nums[i]
+4 % 10 => 4
+5 % 10 => 5
+9 % 10 => 9
+10 % 10 => 0
+11 % 10 => 1
+12 % 10 => 2
+
+i => (i + k) % n
+
+(6 + 4) % 10
+
+13 % 10 => 3
+23 % 10 => 3
+
+
+"""

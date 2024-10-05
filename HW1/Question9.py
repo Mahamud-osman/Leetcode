@@ -16,6 +16,8 @@ def specificIndex(nums, k, val):
         print(nums)
         return nums
 
+#Add fake element, BS value, rotate and then add K/val
+
 
 
 #manual Testing 

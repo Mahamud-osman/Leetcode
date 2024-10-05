@@ -10,7 +10,7 @@ Write a function to find the second-largest element in an array without sorting 
 # Keep track of largest, compare every number to largest
 
 def findSecondLargest(nums):
-    if len(nums) == 0:
+    if len(nums) < 2:
           return -1
 
     largest = nums[0]
@@ -19,16 +19,22 @@ def findSecondLargest(nums):
         if nums[i] > largest:
                 largest = nums[i]
     
-    second_largest = nums[0]
-    
-    for i  in range(len(nums)):
-        if nums[i] > second_largest and nums[i] != largest:
+        if nums[0] != largest:
+            second_largest = nums[0] 
+        else:
+            second_largest = nums[1] # anything that is not largest
+        
+        for i  in range(len(nums)):
+            if nums[i] > second_largest and nums[i] != largest:
                 second_largest = nums[i]
             
     print("second_largest", second_largest)
     return second_largest
 
 """
+nums = [100, 1, 98, 97, 99]
+nums = [99, 98, 97, 96, 100]
+
 This one was a little tricky but realized I could traverse once, find the largest and exclude it from the 2nd traversal
 """
 
