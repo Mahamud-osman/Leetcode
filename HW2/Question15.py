@@ -11,3 +11,11 @@ Example: For N=5:
 
 
 """
+
+def multiplicationTable(N):
+    for i in range(1, N + 1):
+        print(i)
+
+
+# Manual testing:
+result = multiplicationTable(5)
