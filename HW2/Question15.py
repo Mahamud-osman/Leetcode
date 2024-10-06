@@ -14,7 +14,11 @@ Example: For N=5:
 
 def multiplicationTable(N):
     for i in range(1, N + 1):
-        print(i)
+        print(i * N)
+
+        
+
+
 
 
 # Manual testing:

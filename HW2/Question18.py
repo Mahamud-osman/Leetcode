@@ -8,3 +8,11 @@ Example: N=5
    **
     *
 """
+
+
+def invertedPyramid(N):
+    for i in range(N + 1,0,-1):
+        print('*' * i)
+
+
+result = invertedPyramid(10)
