@@ -8,14 +8,19 @@ Write a program that prints a pyramid of numbers of height N, where the numbers 
 """
 
 def printPyramid(N):
-    for i in range(1, N + 1):
-        print(i)
-        for i in range(1, N + 1):
-            print(i)
-            for i in range(1, N + 1):
-                print(i)
-                for i in range(1, N + 1):
-                    print(i)
+    # for i in range(1, N + 1):
+    #     print(i)
+    #     for i in range(1, N + 1):
+    #         print(i)
+    #         for i in range(1, N + 1):
+    #             print(i)
+    #             for i in range(1, N + 1):
+    #                 print(i)
+    pyramid_builder = 0
+    for i in range(N + 1):
+        pyramid_builder += 1
+        print(i , pyramid_builder)
+
 
 
 result = printPyramid(4)

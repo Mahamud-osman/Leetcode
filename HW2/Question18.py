@@ -16,3 +16,5 @@ def invertedPyramid(N):
 
 
 result = invertedPyramid(10)
+
+#Same as 14, just switch it around

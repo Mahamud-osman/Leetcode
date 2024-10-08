@@ -4,12 +4,12 @@ Write a program that prints a square of size N using the * character.
 
 """
 
-def printSquare(int):
-    # square = n * 4
-    pass
+def printSquare(N):
+   for i in range(N):
+        print('*' * N)
 
 
 
 
 #Manual testing:
-result 
+result = printSquare(6)

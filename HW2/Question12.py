@@ -10,15 +10,15 @@ def findPrime(nums):
     
     for i in range(len(nums)):
         print(nums[i])
-        # if nums[i] != 1 and nums[i]/nums[i + 1] != 0:
-        if isprime is True:
+        if isprime(nums[i]):
             print(nums[i])
             break
 
-def isprime(num):
-
-    if num != 1 and num/num == 0:
-        print('num is prime')
+def isprime(N):
+    for i in range(2, N + 1):
+        if N % i == 0:
+            return False
+    return True
 
 
 
